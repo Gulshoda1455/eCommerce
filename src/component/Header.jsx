@@ -1,4 +1,5 @@
 import propTypes from "prop-types"
+import { memo } from "react"
 
  const Header=({title,subTitle})=>{
   return (
@@ -14,4 +15,4 @@ Header.propTypes={
   title:propTypes.string.isRequired,
   subTitle:propTypes.string.isRequired
 }
-export default Header;
+export default memo(Header);

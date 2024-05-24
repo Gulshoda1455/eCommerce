@@ -1,4 +1,4 @@
-import React, {  useState,useEffect } from 'react'
+import React, {  useState,useEffect, memo } from 'react'
 import axios from 'axios'
 import Dining from "../assets/images/Dining.png"
 import Living from "../assets/images/living.png"
@@ -15,7 +15,7 @@ const images ={
   "bedroom.png":Bedroom
 }
 
-export default function Categories() {
+ function Categories() {
     const [cards,setCards] = useState([]);
     useEffect(()=>{ 
      const getCategories = async ()=>{
@@ -49,3 +49,4 @@ export default function Categories() {
     </div>
   )
 }
+export default memo(Categories);

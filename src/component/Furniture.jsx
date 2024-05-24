@@ -8,7 +8,7 @@ import six from "../assets/images/sixth.png"
 import seven from "../assets/images/seven.png"
 import eight from "../assets/images/eight.png"
 import nine from "../assets/images/nine.png"
-
+import { memo } from "react"
 
 
 
@@ -52,4 +52,4 @@ const Furniture=()=>{
     </div>
   )
 }
-export default Furniture;
+export default memo(Furniture);

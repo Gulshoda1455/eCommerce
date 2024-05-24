@@ -1,3 +1,4 @@
+import { memo } from "react";
 
  const CategoryCard=({img,name })=>{
   return (
@@ -7,4 +8,4 @@
     </div>
   )
 }
-export default CategoryCard;
+export default memo(CategoryCard);

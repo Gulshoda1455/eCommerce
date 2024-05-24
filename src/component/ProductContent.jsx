@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { memo, useEffect, useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom";
 
@@ -37,4 +37,4 @@ const ProductContent=()=>{
        </div> 
 )
 }
-export default ProductContent; 
+export default memo(ProductContent); 
